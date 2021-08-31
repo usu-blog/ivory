@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div.editor-styles-wrapper {
+    font-family: 'Hiragino Kaku Gothic Pro W3', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+/* Main column width */
+body.block-editor-page .editor-post-title__block,
+body.block-editor-page .editor-default-block-appender,
+body.block-editor-page .editor-block-list__block {
+    max-width: 720px !important; /* 実際のコンテンツ幅は 720px - 30px = 690px */
+}
+
+/* Width of "wide" blocks */
+body.block-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: 1080px !important; /* 実際のコンテンツ幅は 1080px - 30px = 1050px */
+}
+
+/* Width of "full-wide" blocks */
+body.block-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: none !important;
+}
+
+.thumbnail {
+    width: inherit !important;
+    height: inherit !important;
+}
+
+blockquote.wp-embedded-content {
+  display: none !important;
+}
+
+/* font-size */
+.article-body .wp-block-heading h2 {
+  font-size: 1.4em;
+}
+.article-body .wp-block-heading h3 {
+  font-size: 1.3em;
+}
+.article-body .wp-block-heading h4 {
+  font-size: 1.2em;
+}
+.post-thumbnail img {
+  height: 100% !important;
+}
